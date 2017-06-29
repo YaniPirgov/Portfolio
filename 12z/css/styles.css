@@ -112,8 +112,10 @@ z-index: -1;/*Показва мястото на банера*зад движе�
     font-weight: bold;/*Дебелина шрифт*/
     border-bottom:0.125em;/*Долна граница*/
 	border-right:0.5em;/*Дясна границя*/
-	background: rgba(0, 0, 0, .75);/*Фон*/
+	/*background: rgba(0, 0, 0, 0);/*Фон*/
 	border-radius:25px;/*Радиус на рамката*/
+    background: url("../pics/left.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
+    background-size:cover;
 }
 /*Стил на ляв контейнер с неподреден списък*/
 .container-25-l ul{/*Стил на ляв контейнер с ul*/
@@ -128,7 +130,7 @@ z-index: -1;/*Показва мястото на банера*зад движе�
     height:auto;/*Височина*/
     width:100%;/*Ширина*/
     list-style:none;/*Стил на списъка*/
-	margin-left:175px;/*Отклонение вляво*/
+	margin-left:177px;/*Отклонение вляво*/
 }
 .container-25-l a {
     padding: 0;/*Разстояние*/
@@ -138,6 +140,7 @@ z-index: -1;/*Показва мястото на банера*зад движе�
     height:1.5em;/*Височина*/
     line-height: 0.5em;/*Височина на ред*/
 	text-transform: uppercase;/*The text-transform property controls the capitalization of text.*/
+    /*margin-left:100px;*/
 }
 .container-25-l li a {
 	box-sizing:border-box;/*box size-ing*/
@@ -146,18 +149,18 @@ z-index: -1;/*Показва мястото на банера*зад движе�
 }
 /* mouse over link */
 #left-col a:hover{
-	background:rgba(255,0,0,0.5);/*Цвят*/
+	/*background:rgba(255,0,0,0.5);/*Цвят*/
 	color:yellow;/*Цвят*/
 	font-size:125%;/*Размер на шрифт*/
-	margin-right:175px;/*Отклонение вдясно*/
+	/*margin-right:100px;/*Отклонение вдясно*/
 }
 /* unvisited link */
 #left-col a:link{
-	color:white;/*цвят*/
+	color:black;/*цвят*/
 }
 /* visited link */
 #left-col a:visited{
-	color:white;/*Цвят*/
+	color:black;/*Цвят*/
 }
 /* selected link */
 #left-col a:active{
@@ -180,7 +183,7 @@ z-index: -1;/*Показва мястото на банера*зад движе�
     font-size: 100%;/*Размер на шрифта*/
 	/*border-left: 0.125em white dashed;/*Лява граница*/
 	/*border-right: 0.125em white dashed;/*Дясна граница*/
-	background: url("../pics/diary.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0.25);/*Фон*/
+	background: url("../pics/diary.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
 	background-size:cover;
 			/*Edited by Rancheff==================================================*/
 	border-radius:25px;/*Радиус на рамката*/
@@ -255,12 +258,14 @@ div.desc {/*С ."текст"се означава класа. Класа на с
 .container-25-r{/*С ."текст"се означава класа*/
 	position:absolute;/*Позиция*/
 	bottom:0;/*Долно позициониране*/
-	right:0;/*Дясно позициониране*/
+	right:-25px;/*Дясно позициониране*/
 	width:25%;/*Ширина*/
-	border:3px solid black;/*Граница*/
+	/*border:3px solid black;/*Граница*/
 	border-radius:25px;/*Радиус на границата*/
 	float:right;/*Позициониране*/
-	background:rgba(0, 0, 0, .75);/*Фон*/
+	background:rgba(0, 0, 0, 0);/*Фон*/
+    background: url("../pics/comment.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
+    background-size:cover;
 }
 /*Край на секция за коментари*/
 #datetime{/*Дата*/
@@ -284,7 +289,7 @@ h4{font-size:20px; letter-spacing:0px; text-align: center;}
     font-size: 100%;/*Размер на шрифта*/
 	/*border-left: 0.125em white dashed;/*Лява граница*/
 	/*border-right: 0.125em white dashed;/*Дясна граница*/
-	background: url("../pics/notes.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0.75);/*Фон*/
+	background: url("../pics/notes.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
 	background-size:cover;/*Размер на фона*/
 	
 			/*Edited by Rancheff==================================================*/

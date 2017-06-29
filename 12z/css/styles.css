@@ -1,0 +1,519 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*Тяло*/
+body {
+    background:url("../pics/background.jpg")repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
+	background-size: cover;/*Размер фон*/
+	width: 100%;/*Ширина*/
+}
+/*Стил на банера*/
+#banner{/* С # се означава id-то*/
+background: url("../pics/banner.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*снимка за фон*/
+background-size:cover;/*Размер ковър*/
+padding: 6em 0;/*Разстояние между границата и съдържанието*/
+width: 100%;/*Ширина*/
+position:absolute;/*Позиция*/
+left: 0px;/*Вляво*/
+top:0px;/*Вдясно*/
+z-index: -1;/*Показва мястото на банера*зад движещия се текст**/
+}
+/*Навигация*/
+#nav-content {/* С # се означава id-то*/
+	height: 2.5em;/*Височина*/
+	width: 100%;/*Ширина*/
+	font-size: 100%;/*Размер шрифт*/
+	font-family: 'Open Sans', sans-serif;/*Вид шрифт*/
+	font-weight:bold;/*Дебелина на шрифта*/
+	position: left;/*Тази позиция добавя 20px-ла къл лявата позиция*/
+	border-bottom:2px white dashed;/*Долна граница*/
+	background:black;/*Фон*/
+	opacity:.95;/*Прозрачност*/
+	border-radius:25px;/*Радиус на рамка*/
+	margin-top: 170px; /* Rancheff: Зададох margin на top side за да преместя нав - бара ,
+													заедно с всички последователни div-ове */
+}
+/*Навигация неподреден списък*/
+#nav-content ul {/* С # се означава id-то*/
+	padding: 0;/*Разстояние*/
+	margin: 0 auto;/*Разстояние около елементите*/
+	width: 30.000em;/*Ширина*/
+	height: 2.5em;/*Височина*/
+}
+/*Навигация лист*/
+#nav-content li {/* С # се означава id-то*/
+	display: inline;/*browser support default*/
+	float:left;/*Разместване на елементите "плуване"*/
+}
+#nav-content a {/* С # се означава id-то*/
+	color: #fff;/*Цвят*/
+	display: inline-block;/*Показва елемента като блок или <p>*/
+	width: 100px;/*Ширина*/
+	text-align: center;/*Място на текста*/
+	text-decoration: none;/*Декорация на текста*/
+	line-height: 2.5em;/*Височина*/
+	text-shadow: 1px 1px 0px #283744;/*Сянка на текста*/
+}
+#nav-content li a {/* С # се означава id-то*/
+	border-right: 1px solid #576979;/*Дясна граница*/
+	box-sizing:border-box;/*Размер на кутията*/
+	-moz-box-sizing:border-box;/* box size-ing za mozila*/
+	-webkit-box-sizing:border-box;
+}
+#nav-content li:last-child a {
+	border-right: 0;/*Дясна граница*/
+}
+#nav-content a:hover, #nav-content a:active {
+	background-color:rgba(255,0,0,0.5);/*Цвят*/
+}
+#nav-content a#pull {
+	display: none;/*The display property specifies the type of box used for an HTML element.he element will not be displayed at all has no effect on layout*/
+}
+/*Главна страница*/
+#homepage{
+	background:url("../pics/home.jpg")repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
+	background-size:cover;/*Размер ковър*/
+	color:white;/*Цвят*/
+	height:530px;/*Височина*/
+	width:100%;/*Ширина*/
+	border-radius:25px;/*Радиус на рамката*/
+}
+/*Дизайн на движещия се текст /border, width, height, text-align/*/
+.myMarquee {/*С ."текст"се означава класа*/
+			color:red;/*Цвят*/
+            -webkit-marquee-direction: forwards;/*Посока*/
+            -webkit-marquee-increment: 6px;
+            -webkit-marquee-repetition: infinite;/*Повторения*/
+            -webkit-marquee-speed: fast;/*Скорост*/
+}
+/*Плъзгане*/
+.scroll {/*С ."текст"се означава класа*/
+            -webkit-marquee-style: scroll;/*Плъзгане*/
+        }
+/*Пързаляне*/
+.slide {/*С ."текст"се означава класа*/
+            -webkit-marquee-style: slide;/*Пързаляне*/
+        }
+/*Стил на ляв контейнер*/
+.container-25-l {/*С ."текст"се означава класа*/
+    float: left;/*Разместване на елементите "плуване" :D"*/
+    width: 25%;/*Ширина*/
+    height: auto;/*Височина*/
+    font-size: 100%;/*Размер шрифт*/
+    font-weight: bold;/*Дебелина шрифт*/
+    border-bottom:0.125em;/*Долна граница*/
+	border-right:0.5em;/*Дясна границя*/
+	background: rgba(0, 0, 0, .75);/*Фон*/
+	border-radius:25px;/*Радиус на рамката*/
+}
+/*Стил на ляв контейнер с неподреден списък*/
+.container-25-l ul{/*Стил на ляв контейнер с ul*/
+    padding:1px;/*Разстояние*/
+    margin:1.5em 0;/*Разстояние около елементите*/
+    height:auto;/*Височина*/
+    display:block;/*Показва елемента като блок или <p>*/
+    width:100%;/*Ширина*/
+}
+/*Стил на ляв контейнер с неподреден списък и спъсък*/
+.container-25-l ul li{/*Стил на ляв контейнер с ul и li*/
+    height:auto;/*Височина*/
+    width:100%;/*Ширина*/
+    list-style:none;/*Стил на списъка*/
+	margin-left:175px;/*Отклонение вляво*/
+}
+.container-25-l a {
+    padding: 0;/*Разстояние*/
+    margin: 0 auto;/*Разстояние около елементите*/
+    display: block;/*Показва като блок или <p>*/
+    text-decoration:none;/*Декорация на текста*/
+    height:1.5em;/*Височина*/
+    line-height: 0.5em;/*Височина на ред*/
+	text-transform: uppercase;/*The text-transform property controls the capitalization of text.*/
+}
+.container-25-l li a {
+	box-sizing:border-box;/*box size-ing*/
+	-moz-box-sizing:border-box;/* box size-ing za mozila*/
+	-webkit-box-sizing:border-box;
+}
+/* mouse over link */
+#left-col a:hover{
+	background:rgba(255,0,0,0.5);/*Цвят*/
+	color:yellow;/*Цвят*/
+	font-size:125%;/*Размер на шрифт*/
+	margin-right:175px;/*Отклонение вдясно*/
+}
+/* unvisited link */
+#left-col a:link{
+	color:white;/*цвят*/
+}
+/* visited link */
+#left-col a:visited{
+	color:white;/*Цвят*/
+}
+/* selected link */
+#left-col a:active{
+	color:yellow;/*Цвят*/
+}
+/*Основна секция*/
+#basic-section {
+    border-radius: 6px;/*Радиус на рамката*/
+    color: black;/*Цвят*/
+    margin: 1em;/*Разстояние между елементите*/
+    padding: 1em;/*Разстояние*/
+	font-family:'Blackadder ITC', cursive ;/*Вид на шрифта*/
+	font-size:20px;/*Размер на шрифта*/
+}
+/*Стил на централен контейнер*/
+.container-50 {/*С ."текст"се означава класа*/
+    float: left;/*Разместване на елементите "Плуване" :D"*/
+    width: 50%;/*Ширина*/
+    height: auto;/*Височина*/
+    font-size: 100%;/*Размер на шрифта*/
+	/*border-left: 0.125em white dashed;/*Лява граница*/
+	/*border-right: 0.125em white dashed;/*Дясна граница*/
+	background: url("../pics/diary.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0.25);/*Фон*/
+	background-size:cover;
+			/*Edited by Rancheff==================================================*/
+	border-radius:25px;/*Радиус на рамката*/
+}
+h3{
+		font-family: 'Freckle Face', cursive;/*Вид на шрифта*/	
+		color: blue/*Цвят*/
+	}
+h4{
+		font-family: 'Freckle Face', cursive;/*Вид на шрифта*/
+		color:white;/*Цвят*/
+		
+	}
+		/*Стил на страничното меню с линкове*/
+.right-aside {/*С ."текст"се означава класа*/
+		position:fixed;/*Позиция*/
+		bottom: 50%;/*Отдолу*/
+		right: 0;/*Отдясно*/
+		width: 250px;/*Ширина*/
+		margin: 10px 15px 10px 0;/*Разстояние между елементите*/
+		border: 3px solid;/*Граница*/
+		float: right;/*Разместване на елементите "Плуване" :D"*/
+		border-radius:25px;/*Радиус на граница*/
+		-webkit-box-shadow: 12px 12px 19px 0px rgba(0,0,0,1);
+		-moz-box-shadow: 12px 12px 19px 0px rgba(0,0,0,1);
+		box-shadow: 12px 12px 19px 0px rgba(0,0,0,1);/*Сянка на кутията с връзки*/
+		background: url("../pics/fb.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);/*Фон*/
+		background-size:cover;
+	}
+.right-aside ul li a, .right-aside ol li a{/*С ."текст"се означава класа*/
+	display: block;/*Показване*/
+	color:#333;/*Цвят*/
+	font-size: 17px;/*Размер на щрифта*/
+	font-weight: bold;/*Ширина на шрифта*/
+	line-height: 10px;/*Височина на линия*/
+	text-decoration: none;/*Декорация*/
+	text-transform: uppercase;/*Трансформация на текст*/
+	text-shadow: 20px 9px 1px #5e5e5e;/*Сянка на текста*/
+	margin:10px;
+}
+.right-aside a:hover {/*С ."текст"се означава класа*/
+	font-style: italic;/*Стил на шрифта*/
+}
+/*Край на стила на страничното меню с линкове*/
+	/*Галерия*/
+div.img {/*С ."текст"се означава класа. Класа на снимката*/
+    margin: 5px;/*Разстояние между елементите*/
+    padding: 5px;/*Разстояние*/
+    border: 2px solid #5e5e5e;
+    height: auto;/*Височина*/
+    width: auto;/*Ширина*/
+    float: left;/*Разместване на елементите "Плуване" :D"*/
+    text-align: center;/*Място на текста*/
+}	
+
+div.img img {/*С ."текст"се означава класа. Класа на снимката*/
+    display: inline;/*Показване*/
+    margin: 5px;/*Разстояние между елементите*/
+    border: 1px solid #5e5e5e;/*Граница*/
+}
+
+/*div.img a:hover img {
+    border: 1px solid #5e5e5e ;/*Граница
+}*/
+div.desc {/*С ."текст"се означава класа. Класа на снимката*/
+  text-align: center;/*Място на текста*/
+  font-weight: normal;/*Ширина на шрифта*/
+  width: 120px;/*Ширина*/
+  margin: 5px;/*Разстояние между елементите*/
+}
+/*Секция за коментари*/
+.container-25-r{/*С ."текст"се означава класа*/
+	position:absolute;/*Позиция*/
+	bottom:0;/*Долно позициониране*/
+	right:0;/*Дясно позициониране*/
+	width:25%;/*Ширина*/
+	border:3px solid black;/*Граница*/
+	border-radius:25px;/*Радиус на границата*/
+	float:right;/*Позициониране*/
+	background:rgba(0, 0, 0, .75);/*Фон*/
+}
+/*Край на секция за коментари*/
+#datetime{/*Дата*/
+	color:black;/*Цвят*/
+	position:relative;/*Позиция*/
+	text-align:center;/*Позициониране на текста*/
+	margin-top:5px;/*Розместване отгоре*/
+}
+
+/*Стил за бележки*/
+/*Хедъри*/
+
+h3{font-size: 26px;font-family:'Myriad pro', Corbel, Arial, Helvetica, sans-serif;color: blue;}
+h4{font-size:20px; letter-spacing:0px; text-align: center;}
+
+/*Контейнер*/
+.notes-50{
+	 float: left;/*Разместване на елементите "Плуване" :D"*/
+    width: 50%;/*Ширина*/
+    height: auto;/*Височина*/
+    font-size: 100%;/*Размер на шрифта*/
+	/*border-left: 0.125em white dashed;/*Лява граница*/
+	/*border-right: 0.125em white dashed;/*Дясна граница*/
+	background: url("../pics/notes.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0.75);/*Фон*/
+	background-size:cover;/*Размер на фона*/
+	
+			/*Edited by Rancheff==================================================*/
+	border-radius:25px;/*Радиус на рамката*/
+}
+.marked{/*Ако е маркирана*/
+  border:1px solid black;/*Граница*/
+}
+img{/*Снимка*/
+  width: 150px;/*Ширина*/
+  height: 100px;/*Височина*/
+  vertical-align:middle/*Вертикално разположение*/
+}
+.doneTask{/*Свършена задача*/
+ text-decoration:line-through;/*Декорация на текст*/
+}
+
+ul#sticky_notes{ list-style:none; }/*Неподреден списък*/
+ul#sticky_notes li{/*Подреден списък*/
+
+	width:250px;/*Ширина*/
+	padding:10px;/*Разстояние около съдържанието вътре в границата на елемент*/
+	margin: 30px 20px 30px 20px;/*Разстяние около елементите*/
+	float:left;/*Разместване на елементите "Плуване"*/
+
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);  
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);   
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7); 
+
+  -webkit-transform:rotate(-6deg);  
+  -o-transform:rotate(-6deg);  
+  -moz-transform:rotate(-6deg);  
+
+  font-family: 'Short Stack', cursive;/*Вид на шрифта*/
+}
+ul#sticky_notes h4{
+  padding: 10px;/*Разстояние около съдържанието вътре в границата на елемент*/
+  text-align: center;/*Място на текста*/
+}
+ul#sticky_notes p{
+  font-size:16px;/*Размер на шрифта*/
+  padding: 10px;/*Разстояние около съдържанието вътре в границата на елемент*/
+  text-align: justify;/*Място на текста*/
+}
+ul#sticky_notes li:nth-child(odd){  
+  -o-transform:rotate(4deg);  
+  -webkit-transform:rotate(4deg);  
+  -moz-transform:rotate(4deg);  
+  position:relative; /*Позиция*/
+  top:5px; /*Отгоре*/
+}  
+ul#sticky_notes li:nth-child(2n){  
+  -o-transform:rotate(-3deg);  
+  -webkit-transform:rotate(-3deg);  
+  -moz-transform:rotate(-3deg);  
+  position:relative; /*Позиция*/
+  top:-5px;/*Отгоре*/
+}  
+ul#sticky_notes li:nth-child(5n){  
+  -o-transform:rotate(5deg);  
+  -webkit-transform:rotate(5deg);  
+  -moz-transform:rotate(5deg);  
+  position:relative; /*Позиция*/
+  top:-10px;/*Отгоре*/
+}
+ul#sticky_notes li:hover{ 
+
+  -webkit-transform: scale(1.5);  
+  -moz-transform: scale(1.5);  
+  -o-transform: scale(1.5);  
+  position:relative;/*Позиция*/  
+  z-index:10;/*Отгоре*/  
+
+  -moz-box-shadow:0px 10px 7px rgba(0,0,0,.7);  
+  -webkit-box-shadow: 0px 10px 7px rgba(0,0,0,.7);  
+  box-shadow:0px 10px 7px rgba(0,0,0,.7);/*Сянка на кутията*/
+
+  -webkit-transition: all 300ms ease-in 50ms; /* property duration timing-function delay */
+  -moz-transition: all 300ms ease-in 50ms;
+  -o-transition: all 300ms ease-in 50ms;
+  transition: all 300ms ease-in 50ms;
+
+    cursor:pointer;/*Курсор*/
+}  
+
+.Yellow{background:#ffc;}
+.Green{	background:#cfc;}
+.Blue { background:#ccf;}
+.Red{background:#f24a4a;}
+.Purple{background:#eaafe3;}
+.Orange{background:#f28e50;}
+.Pergament{background-image:url('pergament.jpg');}
+
+.White-text{color: white;}
+.Yellow-text{color:#ffc;}
+.Green-text{ color:#cfc;}
+.Blue-text{ color:#ccf;}
+.Red-text{ color:#f24a4a;}
+.Purple-text{color:#eaafe3;}
+.Orange-text{color:#f28e50;}
+
+button{ 
+  margin: 10px 10px 0px 10px;/*Разстяние около елементите*/
+  width: 45px;/*Ширина*/
+  height: 30px;/*Височина*/
+  background-color: #4c7895;/*Заден фон*/
+  color:lavender;/*Цвят*/
+  cursor:pointer; /*Курсор*/
+  font-size: 16px;/*Размер на шрифта*/
+}
+#highlight,#unhighlight, #addImg,#removeImg{
+  width:100px;/*Ширина*/
+}
+input, select{
+
+  background-color: #4c7895;/*Цвят на фона*/
+  color:lavender;/*Цвят*/
+  height: 30px;/*Височина*/
+  cursor:pointer; /*Курсор*/
+  font-size: 16px;/*Размер на шрифта*/
+  margin-left: 10px;/*Разстяние около елементите*/
+}
+/*Край на стил за бележки*/
+
+.footer{/*С ."текст"се означава класа*/
+	float: left;/*Разместване на елементите "Плуване" :D"*/
+    width: 100%;/*Ширина*/
+    height: auto;/*Височина*/
+    font-size: 100%;/*Размер на шрифта*/
+    border-bottom: 0.125em white dashed;/*Долна граница*/
+	border-left: 0.125em white dashed;/*Лява граница*/
+	border-right: 0.125em white dashed;/*Дясна граница*/
+	color:white;/*Цвят*/
+	background:url("../pics/footer.jpg")repeat-x scroll 0 0 rgba(0, 0, 0, 0.5);/*Фон*/
+	background-size: cover;/*Размер на фона*/
+			/*Edited by Rancheff==================================================*/
+	border-radius:25px;/*Радиус на рамката*//
+}
+
+/*Responsive Marquee Tag*/
+.myMarquee slide{/*С ."текст"се означава класа*/
+    display: block;/*Показване*/
+    position: relative;/*Позиция*/
+    width: 51vw;/*Ширина*/
+    margin: auto;/*Разстояние между елементите*/
+}
+.myMarquee slide{/*С ."текст"се означава класа*/
+    width: 100%;/*Ширина*/
+    margin: auto;/*Разстояние между елементите*/
+    display: block;/*Показване*/
+}
+/*Стил за екран 600px или по-малко*/
+@media screen and (max-width: 600px) {
+	#nav-content { /*nav bar*/
+        height: auto;/*Височина*/
+  	}
+  	#nav-content ul {
+  		width: 100%;/*Ширина*/
+  		display: block;/*Показва елемента като блок или <p>*/
+  		height: auto;/*Височина*/
+  	}
+  	#nav-content li {
+  		width: 50%;/*Ширина*/
+  		float: left;/*Разместване на елементите "Плуване" :D"*/
+  		position: relative;/*Позиция*/
+  	}
+  	#nav-content li a {
+		border-bottom: 1px solid #576979;/*Долна граница*/
+		border-right: 1px solid #576979;/*Дясна граница*/
+	}
+  	#nav-content a {
+	  	text-align: left;/*Разположение на текста*/
+	  	width: 100%;/*Ширина*/
+	  	text-indent: 25px;/*The text-indent property specifies the indentation of the first line in a text-block.*/
+  	}
+
+    .container-25-l{/*Ляв */
+        display:none;/*The display property specifies the type of box used for an HTML element.he element will not be displayed at all has no effect on layout*/
+    }
+    .container-50{/*Централен*/
+        width: 75%;/*Ширина*/
+    }
+}
+
+/*Стил за екран 515px или по-малък*/
+@media only screen and (max-width : 480px) {
+	#nav-content {
+		border-bottom: 0;/*Долна граница*/
+	}
+	#nav-content ul {
+		display: none;/*The display property specifies the type of box used for an HTML element.he element will not be displayed at all has no effect on layout*/
+		height: auto;/*Височина*/
+	}
+	#nav-content a#pull {
+		display: block;/*Показва елемента като блок или <p>*/
+		background-color: rgb(231, 138, 86);/*Цвят на фона*/
+		width: 100%;/*Ширина*/
+		position: relative;/*left:20" adds 20 pixels to the element's LEFT position*/
+	}
+	#nav-content a#pull:after {
+		content:"";/*Съдържание*/
+		background: url("../pics/background.jpg") no-repeat;/*Фон*/
+		width: 30px;/*Ширина*/
+		height: 30px;/*Височина*/
+		display: inline-block;/*Показване*/
+		position: absolute;/*The element is positioned relative to its first positioned (not static) ancestor element*/
+		right: 15px;/*Дясно*/
+		top: 10px;/*Горе*/
+	}
+    .container-25-r{
+        display:none;/*The display property specifies the type of box used for an HTML element.he element will not be displayed at all has no effect on layout*/
+    }
+    .container-50{
+        width: 100%;/*Ширина*/
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	#banner{
+        padding: 2em 0;/*Разстояние*/
+    }
+    
+    #nav-content li {
+		display: block;/*Показва елемента като блок или <p>*/
+		float: none;/*Разместване на елементите "Плуване" :D"*/
+		width: 100%;/*Ширина*/
+	}
+	#nav-content li a {
+		border-bottom: 1px solid #576979;/*Долна граница*/
+	}
+}

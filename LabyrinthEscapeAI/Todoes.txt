@@ -1,0 +1,9 @@
+SelectAction(state) function -> action
+- e% - rand(0,3)
+- 1 - e% - Max a (Q(s,a))
+
+e = 0,1;
+
+For stats purposes
+steps count
+episodes count

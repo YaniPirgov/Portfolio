@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Registration form</title>
+		
+		<link rel="stylesheet" type="text/css" href="reg.css">
+	</head>
+	<body>
+		<div id="regForm">
+			<form action="" method="get">
+				<ul>
+					<li><label for="firstname"	>Firstname:	</label><input type="text" 	class="input" id="firstname" /></li> 
+					<li><label for="lastname"	>Lastname:</label><input type="text" class="input"	 id="lastname"	/></li> 
+					<li><label for="nickname"	>Nickname:</label><input type="text" class="input"  id="nickname"	/></li> 
+					<li><label for="email"		>Email: </label><input type="email" 	class="input" 		id="email"		/></li>  
+					<li><label for="birthday"	>Birthday:</label><input type="datetime-local"	class="input"	id="birthday"	/></li>  
+					<li><label for="password"	>Password:</label><input type="password"	class="input"		id="password"	/></li>  
+					<li><label for="confirm"	>Confirm Password:	</label><input type="password" 	class="input"	id="confirm"	/></li>  
+					<li><label for="sex" class="forSex">	Male:	</label><input type="radio" value="male"	class="sex" name="sex"	/></li>  
+					<li><label for="sex" class="forSex"	>	Female:	</label><input type="radio" value="female"	class="sex" name="sex"	/></li>  
+					<li><label>Select Country:</label>
+						<select class="input">
+							<option>Bulgaria</option>
+							<option>Germany</option>
+							<option>France</option>
+							<option>Italy</option>
+							<option>UK</option>
+						</select>
+					</li>
+					<h3>Favourite food : </h3>
+					<div id="checkboxes">
+						<li>
+							<label>Salad</label><input type="checkbox" value="salad" name="terms" 	class="check">
+							<label>Pork</label><input type="checkbox" value="pork" name="terms" 	class="check">
+						</li>
+						<li>
+							<label>Pizza</label><input type="checkbox" value="pizza" name="terms" 	class="check">
+							<label>Eggs</label><input type="checkbox" value="eggs" name="terms" 	class="check">
+						</li>
+						<li>
+							<label>Chicken</label><input type="checkbox" value="chicken" name="terms" class="check">
+							<label>Cheese</label><input type="checkbox" value="cheese" name="terms" class="check">
+						</li>
+						<li>
+							<label>Lasagna</label><input type="checkbox" value="lasagna" name="terms" class="check">
+							<label>Biscuits</label><input type="checkbox" value="biscuits" name="terms" class="check">
+						</li>
+					</div>
+					<li>
+					<button type="submit" id="submitButton">Register</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+</html>

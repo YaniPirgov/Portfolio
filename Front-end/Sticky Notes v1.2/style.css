@@ -1,0 +1,139 @@
+
+body{background:#EFEFEF;color:#888;padding:0;margin:0;font: 18px 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.clear { clear:both; }
+
+/*Headers*/
+
+h3{font-size: 26px;font-family:'Myriad pro', Corbel, Arial, Helvetica, sans-serif;color: #4c7895;}
+h4{font-size:20px; letter-spacing:0px; text-align: center;}
+
+/*Container*/
+.container{
+	width:85%;
+	margin:30px auto;
+	background:#FFF; 
+	padding:25px;
+	border:1px solid #a1a1a1;
+	min-height:400px;
+	height:auto;	
+}
+
+.marked{
+  border:1px solid black;
+}
+img{
+  width: 150px;
+  height: 100px;
+  vertical-align:middle
+}
+.doneTask{
+ text-decoration:line-through;
+}
+
+ul#sticky_notes{ list-style:none; }
+ul#sticky_notes li{
+
+	width:250px;
+	padding:10px;
+	margin: 30px 20px 30px 20px;
+	float:left;
+
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);  
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);   
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7); 
+
+  -webkit-transform:rotate(-6deg);  
+  -o-transform:rotate(-6deg);  
+  -moz-transform:rotate(-6deg);  
+
+  font-family: 'Short Stack', cursive;
+}
+ul#sticky_notes h4{
+  padding: 10px;
+  text-align: center;
+}
+ul#sticky_notes p{
+  font-size:16px;
+  padding: 10px;
+  text-align: justify;
+}
+
+ul#sticky_notes li:nth-child(odd){  
+  -o-transform:rotate(4deg);  
+  -webkit-transform:rotate(4deg);  
+  -moz-transform:rotate(4deg);  
+  position:relative;  
+  top:5px;  
+}  
+ul#sticky_notes li:nth-child(2n){  
+  -o-transform:rotate(-3deg);  
+  -webkit-transform:rotate(-3deg);  
+  -moz-transform:rotate(-3deg);  
+  position:relative;  
+  top:-5px;  
+}  
+ul#sticky_notes li:nth-child(5n){  
+  -o-transform:rotate(5deg);  
+  -webkit-transform:rotate(5deg);  
+  -moz-transform:rotate(5deg);  
+  position:relative;  
+  top:-10px;  
+}
+
+ul#sticky_notes li:hover{ 
+
+  -webkit-transform: scale(1.5);  
+  -moz-transform: scale(1.5);  
+  -o-transform: scale(1.5);  
+  position:relative;  
+  z-index:10;  
+
+  -moz-box-shadow:0px 10px 7px rgba(0,0,0,.7);  
+  -webkit-box-shadow: 0px 10px 7px rgba(0,0,0,.7);  
+  box-shadow:0px 10px 7px rgba(0,0,0,.7); 
+
+  -webkit-transition: all 300ms ease-in 50ms; /* property duration timing-function delay */
+  -moz-transition: all 300ms ease-in 50ms;
+  -o-transition: all 300ms ease-in 50ms;
+  transition: all 300ms ease-in 50ms;
+
+    cursor:pointer;
+}  
+
+.Yellow{background:#ffc;}
+.Green{	background:#cfc;}
+.Blue { background:#ccf;}
+.Red{background:#f24a4a;}
+.Purple{background:#eaafe3;}
+.Orange{background:#f28e50;}
+.Pergament{background-image:url('pergament.jpg');}
+
+.White-text{color: white;}
+.Yellow-text{color:#ffc;}
+.Green-text{ color:#cfc;}
+.Blue-text{ color:#ccf;}
+.Red-text{ color:#f24a4a;}
+.Purple-text{color:#eaafe3;}
+.Orange-text{color:#f28e50;}
+
+button{ 
+  margin: 10px 10px 0px 10px;
+  width: 45px;
+  height: 30px;
+  background-color: #4c7895;
+  color:lavender;
+  cursor:pointer; 
+  font-size: 16px;
+}
+#highlight,#unhighlight, #addImg,#removeImg{
+  width:100px;
+}
+input, select{
+
+  background-color: #4c7895;
+  color:lavender;
+    height: 30px;
+  cursor:pointer; 
+  font-size: 16px;
+  margin-left: 10px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+		<title>Sticky Notes</title>
+	</head>
+	<body>
+
+
+		<div class="container">
+			<h3>Create CSS Sticky Notes</h3>
+		    <p>
+				Title		<input type="text" id="title" />
+				Description <input type="text" id="description" />
+				<button id="refreshNotes">&#10010;</button>
+				<button id="delete">&#10006;</button> 
+				<button id="done">&#10002;</button>
+				<button id="taskRe">&#10001;</button>
+			</p>
+
+			<h3>Background Color</h3>
+			<p id="colorPara">
+				<select id="colourMenu">
+					<option>White</option>
+					<option>Green</option>
+					<option>Blue</option>
+					<option>Yellow</option>
+					<option>Red</option>
+					<option>Purple</option>
+					<option>Orange</option>
+					<option>Pergament</option>
+				</select>
+				<button id="colorchanger">&#x02713;</button>
+				<input type="text" 	id="colorValue" placeholder="Add HEX or RGB color" />
+				<button id="colorchanger2">&#x02713;</button>
+				Image
+				<input type="text" 	id="imgSrc" placeholder="Image Source" />
+				<button id="addImg">Add</button>
+				<button id="removeImg">Remove</button>
+			</p> 
+
+			<h3>Font Properties</h3>
+			<p>
+				Font Color<input type="text" 	id="colorValueText" placeholder="Add HEX or RGB color" />
+				<button id="colorchangerText">&#x02713;</button>
+				<button id="highlight">Mark &#x02713;</button>
+				<button id="unhighlight">Unmark &#10006;</button>
+			</p>
+			<p>
+				TItle size<button id="incTitleFont" >&#10010;</button><button id="decrTitleFont" >&#8722;</button>
+				Content size<button id="incContentFont" >&#10010;</button><button id="decrContentFont" >&#8722;</button>
+			</p>
+			<p>
+				Font family
+				<select id="fontFamily">
+					<option>Georgia, serif</option>
+					<option>"Palatino Linotype", "Book Antiqua", Palatino, serif</option>
+					<option>"Times New Roman", Times, serif</option>
+					<option>Arial, Helvetica, sans-serif</option>
+					<option>"Arial Black", Gadget, sans-serif</option>
+					<option>"Comic Sans MS", cursive, sans-serif</option>
+					<option>Impact, Charcoal, sans-serif</option>
+					<option>"Lucida Sans Unicode", "Lucida Grande", sans-serif</option>
+					<option>Tahoma, Geneva, sans-serif</option>
+					<option>"Trebuchet MS", Helvetica, sans-serif</option>
+					<option>Verdana, Geneva, sans-serif</option>
+					<option>"Courier New", Courier, monospace</option>
+					<option>"Lucida Console", Monaco, monospace</option>
+				</select>
+				<button  id="changeFont" >&#x02131;</button>
+				Bold
+				<select id="boldMenu">
+					<option>normal</option>
+					<option>bold</option>
+				</select>
+				<button id="boldIt">&#x02713;</button>
+				Italic
+				<select id="italicMenu">
+					<option>normal</option>
+					<option>italic</option>
+					<option>oblique</option>
+				</select>
+				<button id="ItalicIt">&#x02713;</button>
+			</p>
+			<div class="clear"></div>
+			<ul id="sticky_notes"></ul>
+			<div class="clear"></div>
+		</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script src="script.js"></script>
+	</body>
+</html>

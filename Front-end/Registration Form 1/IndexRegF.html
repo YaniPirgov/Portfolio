@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Регистрирайте се</title>
+		<link rel="stylesheet" type="text/css" href="REG.css">
+	</head>
+	<body bgcolor="#FFFFCC">	
+		<div id="header"> 			
+			 <h1 align="center">Регистрация</h1>		 
+		</div>				
+		<div id = "RegForm">
+			<form action="" method="get">
+				<ul>
+					<li><label for="UserID">Псевдоним:</label><input type="text" class="input"	id="UserID" 	/></li>
+					<li><label for="password">Парола:</label><input type="password"	class="input"	id="password"	/></li>  
+					<li><label for="Name">Име:</label><input type="text" 	class="input"	id="Name" 	/></li> 
+					<li><label for="Address">Адрес:</label><input type="text" 	class="input"		id="Address"	/></li>
+					<li><label>Държава:</label>
+						<select class="input">
+							<option>(Изберете държава)</option>
+							<option>България</option>
+							<option>Бразилия</option>
+							<option>САЩ</option>
+							<option>Канада</option>
+							<option>Великобритания</option>
+							<option>Уелс</option>
+							<option>Португалия</option>					
+						</select>
+					<li><label for="ZIP">ЗИП Код: </label><input type="email" class="input" 	id="ZIP"	/></li>
+					<li><label for="email">Е-мейл: </label><input type="email"	class="input" 	id="email"	/></li>
+					<li><label for="sex" class="forSex">Мъж:</label><input type="radio"	value="male"	class="sex" name="sex"	/></li>  
+					<li><label for="sex" class="forSex"	>Жена:</label><input type="radio"	value="female"	class="sex" name="sex"	/></li> 
+					<div id="checkboxes">
+					<h3>Език: </h3>
+					<div id="checkboxes">
+						<li>
+							
+							<label>Английски</label><input type="checkbox" value="salad" name="terms" class="check">
+							<label>Друг</label><input type="checkbox" value="pork" name="terms" class="check">
+						</li>
+						<p>	
+							<label style="width: 50%;">Въведете описание:</label><br> 
+							<textarea></textarea> 
+						</p>	
+						</li>
+					</div>
+					<li><button type="submit" id="submitButton">Запиши ме</button></li>
+				</ul>
+			</form>
+		</div>
+	</body>
+</html>

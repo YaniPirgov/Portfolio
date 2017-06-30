@@ -1,0 +1,9 @@
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\bin\Debug\radioUpr.exe.config
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\bin\Debug\radioUpr.exe
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\bin\Debug\radioUpr.pdb
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\obj\Debug\radioUpr.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\obj\Debug\radioUpr.Form1.resources
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\obj\Debug\radioUpr.Properties.Resources.resources
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\obj\Debug\radioUpr.csproj.GenerateResource.Cache
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\obj\Debug\radioUpr.exe
+C:\Users\fmi\Desktop\Upr GPI 2\radioUpr\radioUpr\obj\Debug\radioUpr.pdb
